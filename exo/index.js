@@ -239,6 +239,43 @@ function exercice1()
         
 
 
+
+ 
+    let nav7 = document.querySelector(".bi-trash3");
+    let nav8 = document.querySelector(".cancel-btn");
+    
+    let menu7 = document.getElementById("pop-up");
+    let menu8 = document.querySelector(".submenu6");
+    
+    nav7.addEventListener("click", function(event){
+        
+        if (menu7.classList.contains("close3")) {
+            
+            menu7.classList.remove("close3");
+            menu7.classList.add("open3");
+            menu8.classList.remove("open3");
+            menu8.classList.add("clause3");
+            
+        }
+    });
+    
+    nav8.addEventListener("click", function(event){
+        if (menu7.classList.contains("open3")) {
+            
+            menu7.classList.remove("open3");
+            menu7.classList.add("close3");
+            menu8.classList.remove("clause3");
+            menu8.classList.add("open3");
+        }
+        
+    });
+    for(let i = 0; i < users.length; i++)
+            {
+                
+            }
+
+
+
 window.addEventListener("DOMContentLoaded", function(){
     // tout le reste de mon script
 
